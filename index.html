@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Post Instagram Boostrap</title>
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary ">
+        <div class="d-flex align-items-center  ">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-instagram"></i>
+                <i class="fst-normal">Instagram</i>
+            </a>
+
+
+        </div>
+        <div class="d-flex ms-auto gap-2">
+            <button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#crearPostModal">
+                Create a New Post
+            </button>
+
+            <div class="modal fade" id="crearPostModal" tabindex="-1" aria-labelledby="crearPostModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="crearPostModalLabel">Create a New Post</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form>
+                                <div class="mb-3">
+                                    <label for="titulo" class="form-label">Caption:</label>
+
+
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        placeholder="Add the caption of your post here" required></textarea>
+                                </div>
+
+
+
+                            </form>
+                            <button type="button" class="btn border btn secondary btn btn-light"> <i
+                                    class="fa-solid fa-camera"></i></button>
+                            <button type="button" class="btn border btn secondary btn btn-light"> <i
+                                    class="fa-solid fa-location-dot"></i></button>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-success">Publish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-group">
+
+                <button type="button" class="btn btn-secondary me-2 dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end ">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item  text-danger" href="#">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid p-2">
+        <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg"
+                            class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://cdn.create.vista.com/api/media/medium/163771204/stock-photo-multiethnic-students-studying-together?token="
+                            class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="img-fluid w-100" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://images.pexels.com/photos/33466526/pexels-photo-33466526.jpeg"
+                            class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://www.civitatis.com/f/francia/paris/subida-torre-eiffel-589x392.jpg"
+                            class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://i.pinimg.com/736x/af/03/e8/af03e8f301698efda8006b4da49ebf52.jpg"
+                            class="img-fluid w-100" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://www.mundopsicologos.com/pro/psicologos/articles/cf/cd/0/16838/familias-felices.jpg"
+                            class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://dossetenta.com/wp-content/uploads/2024/03/lenguaje-programacion-web-1024x666.jpg"
+                            class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://media.istockphoto.com/id/515714856/es/foto/mujer-usando-brasile%C3%B1o-colorido-disfraz-de-carnaval-de-r%C3%ADo-de-janeiro-brasil.jpg?s=612x612&w=0&k=20&c=sFCXsE2NT7E8IQVzQV6E9PbmmeusykvAO_lHTmIl44M="
+                            class="img-fluid w-100" alt=""></div>
+
+                </div>
+            </div>
+
+            <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded p-0">
+                        <div class="d-flex p-2">
+                            <div class="w-100 fs-4">My Little Dogs!</div>
+                            <small class="align-bottom">08/26</small>
+                        </div>
+                        <img style="object-fit: cover;"
+                            src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg"
+                            class="img-fluid w-100 col-12" alt="" />
+                        <div class="p-2">
+                            <strong>204 Likes</strong>
+                            <p>This is an example of a very good photo that you can post on instagram</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded p-0">
+                        <div class="d-flex p-2">
+                            <div class="w-100 fs-4">The greatness of Rio de Janeiro</div>
+                            <small>04/09</small>
+                        </div>
+                        <img style="object-fit: cover;"
+                            src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="img-fluid w-100 col-12" alt="" />
+                        <div class="p-2">
+                            <strong>26985 Likes</strong>
+                            <p>This is an example of a very good photo that you can post on instagram</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded p-0">
+                        <div class="d-flex p-2">
+                            <div class="w-100 fs-4">Amazing GOAL by Cristiano!</div>
+                            <small>06/10</small>
+                        </div>
+                        <img style="object-fit: cover;"
+                            src="https://i.pinimg.com/736x/af/03/e8/af03e8f301698efda8006b4da49ebf52.jpg"
+                            class="img-fluid w-100 col-12" alt="" />
+                        <div class="p-2">
+                            <strong>204 Likes</strong>
+                            <p>This is an example of a very good photo that you can post on instagram</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
